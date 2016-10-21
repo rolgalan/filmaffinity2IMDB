@@ -280,7 +280,7 @@ class FAhelper:
             movieCountry = match.group(1)
         else:
             print(
-                "ERROR FOUND: change regular expression at getMovieInfoById() for movie county. Probably FA changed web page structure. Movie ID: " + str(
+                "ERROR FOUND: change regular expression at getMovieInfoById() for movie country. Probably FA changed web page structure. Movie ID: " + str(
                     movieID))
             sys.exit("Error happens, check log.")
 
