@@ -274,7 +274,7 @@ class FAhelper:
 
         # Get movie country information
         pattern = re.compile(
-            '<dt>Country<\/dt>[\r\n\s]+<dd><span id="country-img"><img src="\/imgs\/countries\/[\w]+.jpg" title="[\W\w\s]+?"><\/span>&nbsp;([\W\w\s]+?)<\/dd>')
+            '<dt>Country<\/dt>[\r\n\s]+<dd><span id="country-img"><img src="\/imgs\/countries\/[\w]+.jpg" alt="[\W\w\s]+?" title="[\W\w\s]+?"><\/span>&nbsp;([\W\w\s]+?)<\/dd>')
         match = pattern.search(html)
         if match:
             movieCountry = match.group(1)
