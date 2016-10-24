@@ -4,6 +4,13 @@ Get filmaffinity voted movies, save them to CSV and post them on IMDB
 # How to:
 Run main.py using python 2.7 and wait :)
 
+It requires BeautifulSoup4 and tabulate dependencies. Make sure you have them installed ([click here for installing pip](http://stackoverflow.com/a/12476379/1516973)):
+
+```
+pip install BeautifulSoup4
+pip install tabualate
+```
+
 When login to IMDB captcha is required. Open captcha url and type text on python.
 
 # Remember:

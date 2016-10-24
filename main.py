@@ -306,8 +306,8 @@ def main():
             sUser = config.imdb_user
             sPassword = config.imdb_password
         except:
-            sUser = raw_input('Please enter your FilmAffinity USER:')
-            sPassword = raw_input('Please enter your FilmAffinity PASSWORD:')
+            sUser = raw_input('Please enter your imdb USER:')
+            sPassword = raw_input('Please enter your imdb PASSWORD:')
         imdb.setUser(sUser, sPassword)
 
         # Login to IMDB

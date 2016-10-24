@@ -63,7 +63,7 @@ class IMDBhelper:
                 captchaURL = self.IMDBurlCaptcha + match.group(1)
             else:
                 print(
-                    "ERROR FOUND: change regular expression at login() for checksum. Probably IMDB changed web page structure")
+                    "ERROR FOUND: change regular expression at login() getting captcha. Probably IMDB changed web page structure")
                 sys.exit("Error happens, check log.")
 
             print("Type captcha form image: " + captchaURL)
@@ -80,7 +80,7 @@ class IMDBhelper:
                 dataForm = {chsm1: chsm2, "login": self.userName, "password": self.userPass, "captcha_answer": capcha}
             else:
                 print(
-                    "ERROR FOUND: change regular expression at login() for checksum. Probably IMDB changed web page structure")
+                    "ERROR FOUND: change regular expression at login() for user/pass. Probably IMDB changed web page structure")
                 sys.exit("Error happens, check log.")
 
             dataPost = urllib.urlencode(dataForm)
