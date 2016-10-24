@@ -245,19 +245,11 @@ def main():
     try:
         import config
 
-        sUser = config.fauser
-        sPassword = config.fapass
+        sUserID = config.fauserId
     except:
-        sUser = raw_input('Please enter your FilmAffinity USER:')
-        sPassword = raw_input('Please enter your FilmAffinity PASSWORD:')
+        sUserID = raw_input('Please enter your FilmAffinity USER-ID:')
 
-    fa.setUser(sUser, sPassword)
-    fa.login()
-    if fa.loginSucceed():
-        print("Login succeed")
-    else:
-        print("Error on login")
-        sys.exit("Not possible to finish task with no login")
+    fa.setUserID(sUserID)
 
     print("Your FA ID is: ", fa.getUserID())
 
